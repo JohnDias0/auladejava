@@ -3,16 +3,13 @@ public class Pessoa {
     int year;
     int height;
     int weight;
-    String direcao;
-    String Bebida;
-    String Ref;
     int energy;
 
-    public Pessoa(String nome, int idade, int altura, int peso) {
-        this.name = nome;
-        this.year = idade;
-        this.height = altura;
-        this.weight = peso;
+    public Pessoa(String name, int year, int height, int weight) {
+        this.name = name;
+        this.year = year;
+        this.height = height;
+        this.weight = weight;
     }
 
      void andar(String direcao) {

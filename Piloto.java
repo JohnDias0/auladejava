@@ -3,7 +3,8 @@ public class Piloto extends Pessoa {
     int hability = (int) Math.ceil(Math.random() * 100);
     int stamina = (int) Math.ceil(Math.random() * 100);
 
-    public super.Piloto(String Equipe){
-    
-    }
+    Piloto(String name, int year, int height, int weight, String direcao, String Bebida, String Ref, int energy, String team) {
+        super(Ref, height, weight, energy);
+        this.team = team;
+}
 }
