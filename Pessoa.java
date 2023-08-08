@@ -1,26 +1,35 @@
 public class Pessoa {
     String name;
     int year;
-    String direcao;
+    int height;
+    int weight;
+    int energy;
 
-    public Pessoa(String nome, int idade){
-        name = nome;
-        year = idade;
+    public Pessoa(String name, int year, int height, int weight) {
+        this.name = name;
+        this.year = year;
+        this.height = height;
+        this.weight = weight;
     }
-    public void andar(String direcao){
-        System.out.println(name + " dá alguns passos a " + direcao);
-    }
-    public void pular(){
-        System.out.println(name + "dá um pulo");
-    }
-    
 
-    public static void main(String[] args) {
-    Pessoa Jonathan = new Pessoa("Jonathan", 17);
-    Jonathan.andar("para frente"); 
+     void andar(String direcao) {
+        System.out.println(this.name + " dá alguns passos a " + direcao);
     }
-}
 
-public class Piloto extends Pessoa{
+     void pular() {
+        System.out.println(this.name + "dá um pulo");
+    }
+
+    void correr() {
+        System.out.println("corre 10km");
+    }
+    void beber(String Bebida){
+        System.out.println(this.name + " toma uma " + Bebida + " para recuperar suas energias.");
+        this.energy += 3;
+    }
+    void comer(String Ref){
+        System.out.println(this.name + "come um(a)" + Ref + "para recuperar suas energias.");
+        this.energy += 9;
+    }
 
 }
