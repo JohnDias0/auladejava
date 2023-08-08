@@ -13,9 +13,14 @@ public class Pessoa {
     public void pular(){
         System.out.println(name + "dá um pulo");
     }
+    
 
     public static void main(String[] args) {
     Pessoa Jonathan = new Pessoa("Jonathan", 17);
     Jonathan.andar("para frente"); 
     }
+}
+
+public class Piloto extends Pessoa{
+
 }
